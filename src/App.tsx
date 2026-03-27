@@ -479,9 +479,9 @@ export default function ResourceRateTrackerApp(): React.ReactElement {
     <div className="min-h-screen bg-slate-100 text-slate-900 p-6">
       <div className="max-w-7xl mx-auto space-y-6">
         <div className="bg-white rounded-3xl shadow-sm border border-slate-200 p-6">
-          <h1 className="text-2xl font-semibold tracking-tight">Resource Rate Tracker</h1>
+          <h1 className="text-2xl font-semibold tracking-tight">Round Tracker</h1>
           <p className="text-sm text-slate-600 mt-2">
-            Save runs locally in your browser. Duration can be auto-calculated from Coins and Coins Per Hour or manually entered in hh:mm:ss.
+            Save rounds locally in your browser. Duration can be auto-calculated from Coins and Coins Per Hour or manually entered in hh:mm:ss.
           </p>
         </div>
 
@@ -619,9 +619,7 @@ export default function ResourceRateTrackerApp(): React.ReactElement {
                 className="w-full rounded-2xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-slate-300"
               />
             </label>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 items-end">
+            
             <label className="space-y-1 max-w-sm">
               <span className="text-sm font-medium">Dice Per Hour</span>
               <input
@@ -631,6 +629,9 @@ export default function ResourceRateTrackerApp(): React.ReactElement {
                 className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-3 py-2 text-slate-600"
               />
             </label>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 items-end">
 
             <button
               type="button"
